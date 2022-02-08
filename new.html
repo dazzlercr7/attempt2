@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Web Page</title>
+    <link rel="stylesheet" href="./new.css">
+    <script src="./script.js"></script>
+    <script>
+        console.log("Inside the index")
+    </script>
+
+    <style>
+        #pagetitle {
+            background: green;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: aqua;">
+
+    <!-- <a href="#userform"><h6>Go to User Form</h6></a> -->
+
+    <h1 style="background-color: orange; text-align: center;">Shubham Portfolio</h1>
+
+    <h2 id="pagetitle">Welcom to all</h2>
+    <div>
+        This has <em>indeed</em> been a <span style="color: red">looooooooooong</span> day
+    </div>
+
+    <div>
+        <p>What we have Learned today</p>
+        <ul>
+            <li>Tag</li>
+            <li>Attributes</li>
+            <li>Semantic Elements</li>
+            <li>Types of List</li>
+
+
+        </ul>
+    </div>
+
+    <img src="https://i2-prod.mirror.co.uk/incoming/article26025001.ece/ALTERNATES/s615b/0_GettyImages-1366333695.jpg"
+        alt="Cristiano" style="height:500px;">
+
+    <img src="./Static/CR7.jpg" alt="try" style="height:500px">
+
+    <table border="2px">
+        <!-- This is coming from inside the table -->
+
+        <!-- <th>Header1</th> -->
+
+        <!-- row1 
+        td--represent data
+        th--header of any row or col
+        tr--represent table row goes from left to right
+        -->
+
+
+        <tr>
+            <th scope="col"> Sr.No.</th>
+            <th scope="col"> Attendance Table</th>
+            <th scope="col"> Class1</th>
+            <th scope="col"> Class2</th>
+
+        </tr>
+
+
+        <!-- row2 -->
+        <tr>
+            <th>1</th>
+            <th scope="row">Shubham</th>
+            <td>Attended</td>
+            <td>Attended</td>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th scope="row">Vedansh</td>
+            <td>Attended</td>
+            <td>Attended</td>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <th scope="row">Kanak</th>
+            <td>Attended</td>
+            <td>Attended</td>
+        </tr>
+
+        <!--IT will work in span form in a continue 
+             <th>Janhavi</th>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td>
+
+            <th>Cristiano</th>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td>
+            <td>Attended</td> -->
+        <tr>
+            <th>4</th>
+            <th scope="row">Janhavi</th>
+            <td>Attended</td>
+            <td>Attended</td>
+        </tr>
+
+    </table>
+
+    <h2>Potter Fan Form</h2>
+    <form method="HTTPVERB" action="What target place to go to">
+
+        <div>
+            <label for="First Name">First Name:</label>
+            <input type="text" name="First Name">
+
+
+            <label for="user_password">Password:</label>
+            <input type="password" name="user_password">
+        </div>
+
+
+        <div>
+            <label for="Date_entry">Date of 1 <sup>st</sup> purchase of Harry Potter book:</label>
+            <input type="date" name="Date_entry">
+        </div>
+
+        <div>
+            <label for="Number">Total Number of Harry Potter Books read:</label>
+            <input type="number" name="Number">
+        </div>
+
+        <div>
+            <a href="https://www.google.com/" target="_blank" style="background-color:red; color: peru;">Take me to
+                Google Page</a>
+            <a href="https://quantiphi.com/careers/#whats-your-passion" target="_blank" id="a1" class="anchorclass">Take
+                me to target Page</a>
+        </div>
+
+        <div>
+            <label for="About" id="textarealabel">Text Area:</label>
+            <textarea name="About" cols="30" rows="10">Mention your comments and views on the Books related to Harry Potter
+                </textarea>
+        </div>
+
+        <div>
+            <label for="books">Select your best Harry Potter Novel:</label>
+            <select name="books">
+                <option value="Book1">Philosopher's Stone</option>
+                <option value="Book2">Chamber of Secrets</option>
+                <option value="Book3">Prisoner of Azkaban</option>
+                <option value="Book4">Goblet of Fire </option>
+                <option value="Book5">Order of the Phoenix </option>
+                <option value="Book6">Half-Blood Prince </option>
+                <option value="Book7">Deathly Hallows</option>
+            </select>
+        </div>
+
+        <!-- <div>
+                <input type="button" value="Test Button">
+            </div> -->
+
+        <div>
+            <p>Select your Favourite Character:</p>
+            <label for="char">Hermione Granger:</label>
+            <input type="radio" name="char" value="char1_value">
+            <label for="char">Ron Weasley:</label>
+            <input type="radio" name="char" value="char2_value">
+            <label for="char">Rubeus Hagrid:</label>
+            <input type="radio" name="char" value="char3_value">
+            <label for="char">Severus Snape:</label>
+            <input type="radio" name="char" value="char4_value">
+            <label for="char">Draco Malfoy:</label>
+            <input type="radio" name="char" value="char5_value">
+        </div>
+
+        <div>
+            <p>Select your 2 Favourite Villan Character:</p>
+            <label for="slot1">Lord Voldemort</label>
+            <input type="checkbox" name="slot1" value="fav1">
+            <label for="slot2">Newt Scamander</label>
+            <input type="checkbox" name="slot2" value="fav2">
+            <label for="slot3">Bellatrix Lestrange</label>
+            <input type="checkbox" name="slot3" value="fav3">
+
+        </div>
+
+        <!--     
+            <div>
+                
+                <button onsubmit="">Click me</button>
+            </div> -->
+
+        <div>
+            <input type="Submit">
+        </div>
+
+
+
+
+    </form>
+
+    <h6>Example of pseudo class</h6>
+
+    <a href="#firstarticle"> Go to first article</a>
+    <p><a href="#secondarticle"> Go to second article</a></p>
+
+
+    <p id="firstarticle">This is the first article</p>
+    <p id="secondarticle">This is the second article</p>
+
+    <div></div>
+
+    <div class="blockexample">
+        block level - 1
+    </div>
+
+    <div class="blockexample">
+        block level - 2
+    </div>
+
+    <div class="blockexample">
+        block level - 3
+    </div>
+
+    <span class="inlineexample">
+        span 1
+    </span>
+
+    <span class="inlineexample">
+        span 2
+    </span>
+
+    <div></div>
+
+    <span class="inlineexample">
+        span 3
+    </span>
+
+    <span class="inlineblock">
+        blockspan 1
+    </span>
+
+    <span class="inlineexample">
+        span 4
+    </span>
+
+
+    <span class="inlineblock">
+        blockspan 2 
+    </span>
+
+
+    <span class="inlineblock">
+        blockspan 3
+    </span>
+
+    <!-- <div id="parenttoPosition">
+
+        <div class="positionExample" id="staticExample">Static example</div>
+        <div class="positionExample" id="relativeExample">relative example</div>
+        <div class="positionExample" id="fixedExample">fixed example</div>
+        <div class="positionExample" id="absoluteExample">absolute example</div>
+        <div class="positionExample" id="stickyExample">sticky example</div>
+
+    </div> -->
+
+    <div></div>
+
+    
+
+    <div id="floatingExample"></div>
+    <div id="imagefloatExample1"></div>
+    <div id="imagefloatExample2"></div>
+    <div id="imagefloatExample3"></div>
+    
+    <div id="textNexttoFloat">This is just some random text. Manchester United is winning and moving towards the top of the league board
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+    </div>
+
+    <div id="textNextFloat">This is just some random text. Manchester United is winning and moving towards the top of the league board
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+        This is just some random text. Manchester United is winning and moving towards the top of the league board.
+    </div>
+
+    <div></div>
+
+    <div id="transitionExample"></div>
+
+    <!-- spacing them out -->
+
+    <div class="spacers"></div>
+    <div class="spacers"></div>
+    <div class="spacers"></div>
+
+    <!-- Spacing them out -->
+
+    <div id="parentToTranslate">
+        <div id="translateExample"></div>
+    </div>
+    
+   <!-- <pre>
+            Hello
+            ,,
+            This is preformatted tag
+    </pre> -->
+
+</body>
+
+</html>

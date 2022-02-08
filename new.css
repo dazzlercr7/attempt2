@@ -1,0 +1,193 @@
+#textarealabel {
+  background-color: yellowgreen;
+}
+
+#a1 {
+  background-color: yellow;
+}
+
+#a1:visited {
+  background-color: orange;
+}
+
+#a1:hover {
+  background-color: orchid;
+}
+
+.classanchor {
+  /* font-size: xx-small;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+
+  /* short hand of above notation*/
+  font: xx-small "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+:target {
+  border: 2px gold solid;
+}
+
+.blockexample {
+  border: 1px solid black;
+  height: 10vh;
+  width: 10vw;
+  margin: 5px 2px;
+}
+
+.inlineexample {
+  border-width: 5px;
+  border-radius: 10%;
+  border-style: dotted;
+  border-color: orangered;
+  /*height: 10vh;
+  width: 10vw;*/
+  margin: 0px 5px;
+  padding: 3px 8px;
+}
+
+.inlineblock {
+  /*border: 1px solid orange; */
+  border: 5px solid yellow;
+  border-radius: 15%;
+  height: 4vh;
+  width: 8vw;
+  display: inline-block;
+  margin: 5px 2px;
+  padding: 8px 8px;
+}
+
+/* #parentToPosition {
+  position: static;
+}
+
+#staticExample {
+  position: static;
+}
+
+#relativeExample {
+  position: relative;
+}
+#fixedExample {
+  position: fixed;
+}
+#absoluteExample {
+  position: absolute;
+}
+#stickyExample {
+  position: sticky;
+} */
+
+#imagefloatExample1 {
+  float: right;
+  height: 100px;
+  width: 20px;
+  background: red;
+  border: 2px solid orange;
+}
+
+#imagefloatExample2 {
+  float: left;
+  height: 100px;
+  width: 20px;
+  background: blue;
+  border: 2px solid orange;
+}
+
+#imagefloatExample3 {
+  float: right;
+  height: 70px;
+  width: 20px;
+  background: yellow;
+  border: 2px solid orange;
+}
+
+#textNexttoFloat {
+  border: 5px solid green;
+
+  font-size: 20px;
+  margin: 2em;
+  /* margin = 10*2 = 20px */
+}
+
+#textNextFloat {
+  clear: both;
+  border: 5px solid green;
+}
+
+#textNexttoFloat:hover {
+  background: yellow;
+  height: 300px;
+  width: 300px;
+  /* transition: width 5sec, background 10sec; */
+}
+/* Here the transition time sec didnt took effect becoz already in pseudo properrty that is final destinaation we have mentioned the width and height to be change take place even before transition start to work so thats the reason why the transition time effect didnt took place in time in width change and even the reason was becoz width was not mention in intial property  */
+
+#transitionExample {
+  margin: 20px;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+  border: 1px solid black;
+  transition: width 2s, background 1s;
+  transition-delay: 2s;
+  transition-timing-function: ease;
+}
+
+#transitionExample:hover {
+  width: 80px;
+  height: 40px;
+  background: yellowgreen;
+  border: 1px solid black;
+}
+
+.spacers {
+  height: 3px;
+}
+
+#parentToTranslate {
+  background: violet;
+  width: 300px;
+  height: 300px;
+}
+
+#translateExample {
+  background: black;
+  width: 30px;
+  height: 30px;
+  animation: dazzler 3s ease 5s;
+  animation-fill-mode: forwards; /*forwards means stop at final position*/
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* #parentToTranslate:hover #translateExample {
+  transform: translateX(100%) translateY(800%);
+  transition: transform 3s;
+} */
+
+/* #parentToTranslate:hover #translateExample {
+  animation: dazzler 4s ease 1s;
+} */
+
+/* #parentToTranslate:hover #translateExample {
+  animation-play-state: paused;
+} */
+
+#translateExample:hover {
+  animation-play-state: paused;
+}
+
+@keyframes dazzler {
+  30% {
+    transform: translateY(500%);
+  }
+
+  60% {
+    transform: translateX(500%) translateY(500%);
+  }
+
+  100% {
+    transform: translateX(500%);
+  }
+}
