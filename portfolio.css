@@ -1,0 +1,156 @@
+body {
+  /* background-image: url("./Static/Old-Trafford.jpg");
+  background-size: cover;
+  background: rgba(3, 192, 60, 0.2); */
+  background-image: linear-gradient(
+      rgba(0, 238, 255, 0.7),
+      rgba(255, 255, 240, 0.7)
+    ),
+    url(./Static/Old-Trafford1.jpg);
+  /* rgba(230, 100, 101, 0.7),
+      rgba(145, 152, 229, 0.7) */
+  background-size: cover;
+}
+
+#nav {
+  background: rgba(127, 255, 212, 0.9);
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fforest&psig=AOvVaw1PahHDMQvwv64aRBXfYd0m&ust=1644496849675000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPCf8KbS8vUCFQAAAAAdAAAAABAD);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+  order: 1;
+  margin: 5px;
+  border-radius: 100%;
+  background: aqua;
+  /* border: 2px solid red; */
+}
+
+#deadspace {
+  order: 2;
+  flex-grow: 2;
+  height: 40px;
+  /* border: 2px solid red; */
+}
+
+#optn {
+  order: 3;
+  flex-grow: 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.mem {
+  flex-grow: 1;
+  text-align: center;
+  padding: 3px;
+  /* border: 2px solid red; */
+}
+
+#ct {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  order: 4;
+  flex-grow: 1;
+  padding: 0px 15px;
+  /* border: 2px solid red; */
+}
+
+#btn {
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  height: 25px;
+  flex-basis: 200px;
+  background: aqua;
+}
+
+#spacers {
+  /* border: 1px solid black; */
+  height: 30px;
+}
+
+#heroarea {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid yellow;
+
+  /* background-image: linear-gradient(rgba(0, 238, 255, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./Static/Old-Trafford.jpg);
+  background-size: cover; */
+}
+
+/* #heroarea::before {
+  background: rgba(215, 225, 172, 0.1);
+} */
+
+#sideimage {
+  flex-grow: 1;
+  order: 1;
+  height: 400px;
+  width: 300px;
+  margin: 0px 8px 5px 0px;
+  /* border: 2px solid red; */
+}
+
+#main {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 10px 0px 10px;
+}
+
+#para {
+  /* border: 2px solid red; */
+  font-family: Bradley Hand, cursive;
+  font-weight: bold;
+  /* font-size: 17px; */
+}
+
+/* #mainpart2 {
+  order: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 90%;
+  border: 2px solid yellowgreen;
+} */
+
+#readbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  margin: 15px;
+  order: 1;
+  /* border: 2px solid red; */
+}
+
+#bt {
+  height: 40px;
+  width: 100px;
+  border-radius: 15%;
+  background: gold;
+  border: 0.1px grudge gray;
+}
+
+#dds {
+  order: 2;
+  flex-grow: 1;
+  align-self: center;
+  border: 2px solid red;
+}
