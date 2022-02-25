@@ -230,4 +230,71 @@ let arraytoTest = [
   },
 ];
 
+console.log(
+  arraytoTest
+    .sort((a, b) => a.randomNumber - b.randomNumber)
+    .map((item) => {
+      return {
+        ramnumber: item.randomNumber,
+        stuNam: item.studentsName,
+      };
+    })
+);
+
 // create an array of object with only two properties == first, the random number in ascending order and den the student name to be consoled
+
+//EVENT LOOP ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Call stack works on First In Last Out
+// Call Stack is made up of Event Loop
+
+// Event Loop is a process of taking the execution context in call stack and exe uting it in execution queue
+
+let usersArray = [
+  {
+    id: 1,
+    name: "Piyush",
+    leaves: [
+      {
+        id: 1,
+        reason: "Party",
+        dates: ["2022-02-25", "2022-02-24"],
+      },
+
+      {
+        id: 2,
+        reason: "Movie",
+        dates: ["2022-02-20", "2022-02-21", "2022-02-22"],
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Vedansh",
+    leaves: [
+      {
+        id: 3,
+        reason: "Sick",
+        dates: ["2022-02-10", "2022-02-12"],
+      },
+
+      {
+        id: 4,
+        reason: "Break",
+        dates: ["2022-02-15", "2022-02-08", "2022-02-17"],
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Nandini",
+    leaves: [
+      {
+        id: 5,
+        reason: "Study",
+        dates: ["2022-02-05", "2022-02-19"],
+      },
+    ],
+  },
+];
+
+// write a fn that shows the user that have taken leave between start and end date (user id ,name, leaves(dates,reason))
